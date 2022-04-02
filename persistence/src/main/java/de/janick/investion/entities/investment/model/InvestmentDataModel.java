@@ -17,8 +17,11 @@ public class InvestmentDataModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(unique = true, nullable = false)
     private String isin;
+    @Column(unique = true, nullable = false)
     private String wkn;
+    @Column(unique = true, nullable = false)
     private String symbol;
     private String unternehmen;
     private INVESTMENTTYP investmenttyp;
