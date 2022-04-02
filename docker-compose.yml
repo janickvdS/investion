@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+    investion:
+        image: postgres
+        ports:
+            - 15432:5432
+        environment:
+            - POSTGRES_DB=investion
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=mys
